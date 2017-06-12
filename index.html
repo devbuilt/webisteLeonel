@@ -299,28 +299,31 @@
 			</div>
 			<div class="col-md-8 col-md-offset-2">
 				<h3>Leave me a message</h3>
-
-					<form name="sentMessage" id="contact-form" novalidate>
+				
+				<form role="form" name="sentMessage" id="contactForm" data-toggle="validator" class="shake">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="text" id="name" class="form-control" placeholder="Name" required="required">
-								<p class="help-block text-danger"></p>
+								<input type="text" id="name" class="form-control" placeholder="Enter Name" required data-error="NEW ERROR MESSAGE">
+								<div class="help-block with-errors"></div>
 							</div>
+							
 						</div>
 						<div class="col-md-6">
 							<div class="form-group">
-								<input type="email" id="email" class="form-control" placeholder="Email" required="required">
-								<p class="help-block text-danger"></p>
-							</div>
+								<input type="email" id="email" class="form-control"  placeholder="Enter email" required>
+								<div class="help-block with-errors"></div>
+							</div>	
 						</div>
 					</div>
 					<div class="form-group">
-						<textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-						<p class="help-block text-danger"></p>
+						<textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+						<div class="help-block with-errors"></div>
 					</div>
 					<div id="success"></div>
-					<button type="submit" class="btn btn-default">Send Message</button>
+					<button type="submit" id="form-submit" class="btn btn-default">Send Message</button>
+					<div id="msgSubmit" class="h3 text-center hidden"></div>
+					<div class="clearfix"></div>
 				</form>
 				<div class="social">
 					<ul>
@@ -345,10 +348,12 @@
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" href="css/prettyPhoto.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<!--<script src='http://code.jquery.com/jquery-2.2.4.min.js'></script>
 	<script src='http://alertifyjs.com/build/alertify.js'></script>-->
 	<script type="text/javascript" src="js/jquery.1.11.1.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 	<script type="text/javascript" src="js/SmoothScroll.js"></script>
 	<script type="text/javascript" src="js/easypiechart.js"></script>
 	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
