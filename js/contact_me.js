@@ -74,6 +74,9 @@ $("#contactForm").validator().on("submit", function (event) {
         // everything looks good!
         event.preventDefault();
         submitForm();
+		submitMSG(true, "Message Sent");
+		window.location.reload(true, 20000);
+		
     }
 });
 
