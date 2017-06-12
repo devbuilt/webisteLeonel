@@ -300,7 +300,42 @@
 			<div class="col-md-8 col-md-offset-2">
 				<h3>Leave me a message</h3>
 				
-			<form role="form" id="contactForm" data-toggle="validator" class="shake">
+				<form role="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfN60TLq1WcaR6A4dU_K7DBa40uIN5EvQl45YszEEbQTiMosQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;" data-toggle="validator" class="shake">
+				<div class="row">
+					<div class="form-group col-md-6">
+						<label for="name" class="h4">Name</label>
+						<input type="text" class="form-control" id="entry.2005620554" name="entry.2005620554" placeholder="Enter name" required data-error="Please enter your name"  target="hidden_iframe" onsubmit="submitted=true;">
+						<div class="help-block with-errors"></div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="email" class="h4">Email</label>
+						<input type="email" class="form-control" id="entry.1045781291" email="entry.1045781291" placeholder="Enter email" required>
+						<div class="help-block with-errors"></div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="message" class="h4 ">Message</label>
+					<textarea id="message" class="form-control" id="entry.839337160" message="entry.839337160"rows="5" placeholder="Enter your message" required></textarea>
+					<div class="help-block with-errors"></div>
+				</div>
+				<button type="submit" id="gform" class="btn btn-success">Submit</button>
+				<div id="submit" class="h3 text-center hidden" style="color:white;"></div>
+				<div class="clearfix"></div>
+				
+			</form>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+				
+			<script src="js/jquery-1.11.2.min.js"></script>
+			<script type="text/javascript">
+				var submitted = false;
+			</script>
+			<script type="text/javascript">
+				$('#gform').on('submit', function(e) {
+					$('#gform *').fadeOut(2000);
+					$('#gform').prepend('Your submission has been processed...');
+				});
+			</script>
+			<!--<form role="form" id="contactForm" data-toggle="validator" class="shake">
 				<div class="row">
 					<div class="form-group col-md-6">
 						<label for="name" class="h4">Name</label>
@@ -321,32 +356,7 @@
 				<button type="submit" id="form-submit" class="btn btn-success">Submit</button>
 				<div id="msgSubmit" class="h3 text-center hidden" style="color:white;"></div>
 				<div class="clearfix"></div>
-			</form>
-				<!--<form role="form" name="sentMessage" id="contactForm" data-toggle="validator" class="shake">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="text" id="name" class="form-control" placeholder="Enter Name" required data-error="NEW ERROR MESSAGE">
-								<div class="help-block with-errors"></div>
-							</div>
-							
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-								<input type="email" id="email" class="form-control"  placeholder="Enter email" required>
-								<div class="help-block with-errors"></div>
-							</div>	
-						</div>
-					</div>
-					<div class="form-group">
-						<textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
-						<div class="help-block with-errors"></div>
-					</div>
-					<div id="success"></div>
-					<button type="submit" id="form-submit" class="btn btn-default">Send Message</button>
-					<div id="msgSubmit" class="h3 text-center hidden"></div>
-					<div class="clearfix"></div>
-				</form>-->
+			</form>-->
 				<div class="social">
 					<ul>
 						<li><a href="https://twitter.com/devbuilt" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -375,7 +385,7 @@
   crossorigin="anonymous"></script>
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
-	<script type="text/javascript" src="js/contact_me.js"></script>
+	<!--<script type="text/javascript" src="js/contact_me.js"></script>-->
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/SmoothScroll.js"></script>
 	<script type="text/javascript" src="js/easypiechart.js"></script>
