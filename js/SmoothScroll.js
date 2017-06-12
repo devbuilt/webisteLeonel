@@ -113,8 +113,10 @@ function init() {
             (body.offsetHeight <= windowHeight || 
              html.offsetHeight <= windowHeight)) {
 
+		
+/*Commented out refresh was giving error*/
         html.style.height = 'auto';
-        setTimeout(refresh, 10);
+        setTimeout(/*refresh,*/ 10);
 
         // clearfix
         if (root.offsetHeight <= windowHeight) {
