@@ -300,32 +300,9 @@
 			<div class="col-md-8 col-md-offset-2">
 				<h3>Leave me a message</h3>
 				
-				<form role="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfN60TLq1WcaR6A4dU_K7DBa40uIN5EvQl45YszEEbQTiMosQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;" data-toggle="validator" class="shake">
-				<div class="row">
-					<div class="form-group col-md-6">
-						<label for="name" class="h4">Name</label>
-						<input type="text" class="form-control" id="entry.2005620554" name="entry.2005620554" placeholder="Enter name" required data-error="Please enter your name"  target="hidden_iframe" onsubmit="submitted=true;">
-						<div class="help-block with-errors"></div>
-					</div>
-					<div class="form-group col-md-6">
-						<label for="email" class="h4">Email</label>
-						<input type="email" class="form-control" id="entry.1045781291" email="entry.1045781291" placeholder="Enter email" required>
-						<div class="help-block with-errors"></div>
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="message" class="h4 ">Message</label>
-					<textarea id="message" class="form-control" id="entry.839337160" message="entry.839337160"rows="5" placeholder="Enter your message" required></textarea>
-					<div class="help-block with-errors"></div>
-				</div>
-				<button type="submit" id="gform" class="btn btn-success">Submit</button>
-				<div id="submit" class="h3 text-center hidden" style="color:white;"></div>
-				<div class="clearfix"></div>
-				
-			</form>
-				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-				
-			<script src="js/jquery-1.11.2.min.js"></script>
+				<!--
+				https://docs.google.com/forms/d/e/1FAIpQLSdE30PWzR-Yq3_U9BD6C9lnKJpvJAfEeqjjafibrP2J2QmbRg/viewform?usp=pp_url&entry.981022671=LeonelLeonelLeonelLeonelLeonel&entry.1758527905=TejedaTejedaTejedaTejedaTejeda&entry.134266624=leoooooooooooooooooooooooo@gmail.com-->
+				<script src="js/jquery-1.11.2.min.js"></script>
 			<script type="text/javascript">
 				var submitted = false;
 			</script>
@@ -335,6 +312,31 @@
 					$('#gform').prepend('Your submission has been processed...');
 				});
 			</script>
+				<form role="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdE30PWzR-Yq3_U9BD6C9lnKJpvJAfEeqjjafibrP2J2QmbRg/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+				<div class="row">
+					<div class="form-group col-md-6">
+						<label for="name" class="h4">Name</label>
+						<input type="text" class="form-control" name="entry.981022671" id="entry.981022671" placeholder="Enter name" required data-error="Please enter your name"  target="hidden_iframe" onsubmit="submitted=true;">
+						<div class="help-block with-errors"></div>
+					</div>
+					<div class="form-group col-md-6">
+						<label for="email" class="h4">Email</label>
+						<input type="email" class="form-control" email="entry.1758527905" id="entry.1758527905" placeholder="Enter email" required>
+						<div class="help-block with-errors"></div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="message" class="h4 ">Message</label>
+					<textarea id="message" class="form-control" message="entry.134266624" id="entry.134266624" rows="5" placeholder="Enter your message" required></textarea>
+					<div class="help-block with-errors"></div>
+				</div>
+				<button type="submit" class="btn btn-success" value="submit">Submit</button>
+				<div id="submit" class="h3 text-center hidden" style="color:white;"></div>
+				<div class="clearfix"></div>
+				
+			</form>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+				
 			<!--<form role="form" id="contactForm" data-toggle="validator" class="shake">
 				<div class="row">
 					<div class="form-group col-md-6">
